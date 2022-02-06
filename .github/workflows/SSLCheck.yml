@@ -34,7 +34,7 @@ jobs:
         npm run build
         cd CheckSSL
         chmod +x checker.sh
-        ./checker.sh utermux.eu.org blog.utermux.eu.org ssl.utermux.eu.org test686.eu.org 2096779623.github.io test686.cf vip.test686.cf down.test686.cf test686.eu.org www.test686.cf
+        ./checker.sh utermux.dev blog.utermux.eu.org ssl.utermux.eu.org test686.eu.org 2096779623.github.io test686.cf vip.test686.cf down.test686.cf test686.eu.org www.test686.cf
         cp -rf ./output/ct.json ../public/ct.json
         echo "ssl.utermux.eu.org" > ../public/CNAME
         
