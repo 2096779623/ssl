@@ -9,9 +9,9 @@ script:
   - npm run build
   - cd CheckSSL
   - chmod +x checker.sh
-  - ./checker.sh blog.cyfan.top cyfan.top status.cyfan.top tools.cyfan.top so.cyfan.top www.cyfan.top api.cyfan.top pan.cyfan.top cdn.cyfan.top ssl.cyfan.top pixiv.cyfan.top pixiv-img.cyfan.top
+  - ./checker.sh www.utermux.dev blog.utermux.dev github.fastgithub.tk status.utermux.dev ssl.utermux.dev pan.utermux.dev 
   - cp -rf ./output/ct.json ../public/ct.json
-  - echo "ssl.cyfan.top" > ../public/CNAME
+  - echo "ssl.utermux.dev" > ../public/CNAME
 branches:
   only:
     - master
