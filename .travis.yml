@@ -9,7 +9,7 @@ script:
   - npm run build
   - cd CheckSSL
   - chmod +x checker.sh
-  - ./checker.sh www.utermux.dev blog.utermux.dev github.fastgithub.tk status.utermux.dev ssl.utermux.dev pan.utermux.dev 
+  - ./checker.sh www.utermux.dev blog.utermux.dev mirrors.utermux.dev github.fastgithub.tk status.utermux.dev ssl.utermux.dev alist.utermux.dev
   - cp -rf ./output/ct.json ../public/ct.json
   - echo "ssl.utermux.dev" > ../public/CNAME
 branches:
