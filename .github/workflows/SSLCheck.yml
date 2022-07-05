@@ -34,7 +34,7 @@ jobs:
         npm run build
         cd CheckSSL
         chmod +x checker.sh
-        ./checker.sh blog.utermux.dev mirrors.utermux.dev www.utermux.dev alist.utermux.dev status.utermux.dev ssl.utermux.dev github.fastgithub.tk
+        ./checker.sh blog.utermux.dev mirrors.utermux.dev www.utermux.dev alist.utermux.dev status.utermux.dev utermux.dev ssl.utermux.dev github.fastgithub.tk
         cp -rf ./output/ct.json ../public/ct.json
         echo "ssl.utermux.dev" > ../public/CNAME
         
