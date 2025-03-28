@@ -13,11 +13,11 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@latest
+      uses: actions/checkout@v4.2.2
       with:
         ref: master
     - name: Setup node
-      uses: actions/setup-node@latest
+      uses: actions/setup-node@v4.2.2
       with:
         node-version: '10'
     - name: Cache node modules
@@ -39,7 +39,7 @@ jobs:
         echo "ssl.utermux.dev" > ../public/CNAME
         
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@latest
+      uses: peaceiris/actions-github-pages@v3.1.12
       with:
         github_token: ${{ secrets.TOKEN }}
         publish_dir: ./public
