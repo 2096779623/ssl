@@ -13,15 +13,15 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@latest
       with:
         ref: master
     - name: Setup node
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@latest
       with:
         node-version: '10'
     - name: Cache node modules
-      uses: actions/cache@v1
+      uses: actions/cache@latest
       with:
         path: ~/.npm
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -39,7 +39,7 @@ jobs:
         echo "ssl.utermux.dev" > ../public/CNAME
         
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@latest
       with:
         github_token: ${{ secrets.TOKEN }}
         publish_dir: ./public
